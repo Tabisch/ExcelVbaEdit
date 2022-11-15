@@ -53,7 +53,7 @@ for($k = 0 ; $k -lt $files.length ; $k++)
         }
     }
         
-    $component = $workbook.VBProject.VBComponents | Where-Object{ $_.Name -eq "Modul1" }
+    $component = $workbook.VBProject.VBComponents | Where-Object{ $_.Name -eq "*Modulename*" }
 
     $workbook.VBProject.VBComponents.Remove($component)
     
